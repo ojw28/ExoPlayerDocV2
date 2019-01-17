@@ -535,6 +535,7 @@ When building custom components, we recommend the following:
 [Supported formats]: {{ site.baseurl }}/supported-formats.html
 [IMA extension]: {{ site.releasev2 }}/extensions/ima
 [Interactive Media Ads SDK]: https://developers.google.com/interactive-media-ads
+[Battery consumption page]: {{ site.baseurl }}/battery-consumption.html
 [ExoPlayer library]: {{ site.releasev2 }}/library
 [main demo app]: {{ site.releasev2 }}/demos/main
 [`MediaPlayer`]: {{ site.android_sdk }}/android/media/MediaPlayer.html
