@@ -1,0 +1,27 @@
+.gsc-result-info {
+  padding: 0;
+  padding-bottom: 10px;
+}
+.gsc-control-cse {
+  padding: 0 0 0 0;
+}
+.gsc-above-wrapper-area {
+  border-bottom: 1px solid #E9E9E9;
+  padding: 0 0 5px 0;
+}
+.gsc-table-result,
+.gsc-thumbnail-inside,
+.gsc-url-top {
+  padding-left: 0;
+  padding-right: 0;
+}
+.gsc-result .gs-title {
+  height: 1.5em;
+  overflow: visible;
+}
+.gsc-url-top {
+  display:none;
+}
+.gsc-table-result {
+  margin-top: 0;
+}

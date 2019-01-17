@@ -31,11 +31,13 @@ default:
     show_date: true
     show_tags: true
     show_author_profile: false
+    show_subscribe: false
     full_width: false
     sharing: false
     comment: true
     license: false
     pageview: false
+    search: default
 
 sources:
   bootcdn:
