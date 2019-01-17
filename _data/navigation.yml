@@ -1,0 +1,23 @@
+header:
+  - title:      Javadoc
+    url:        doc/reference/
+  - title:      GitHub
+    url:        https://github.com/google/ExoPlayer
+  - title:      Blog
+    url:        https://medium.com/google-exoplayer
+
+en:
+  - title:      Start
+    children:
+      - title:  Overview
+        url:    index.html
+      - title:  Getting started
+        url:    guide.html
+  - title:      Advanced topics
+    children:
+      - title:  Digital rights management
+        url:    drm.html
+      - title:  Battery consumption
+        url:    battery-consumption.html
+      - title:  Shrinking
+        url:    shrinking.html

@@ -1,0 +1,72 @@
+theme: jekyll-text-theme
+
+
+## => Site Settings
+##############################
+text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+url     : # the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl : # does not include hostname
+title   : ExoPlayer
+description: An application level media player for Android
+
+
+## => GitHub Repository (if the site is hosted by GitHub)
+##############################
+repository: google/ExoPlayer
+repository_tree: gh-pages
+
+
+## => Paths
+##############################
+paths:
+  root    : # title link url, "/" (default)
+  home    : # home layout url, "/" (default)
+  archive : # "/archive.html" (default)
+  rss     : # "/feed.xml" (default)
+
+
+## => Post
+##############################
+excerpt_separator: <!--more-->
+
+
+## => Analytics
+##############################
+analytics:
+  provider: google
+  google:
+    tracking_id : UA-68257324-1
+    anonymize_ip: true
+
+
+## => Build
+##############################
+markdown    : kramdown
+highlighter : rouge
+permalink   : date
+
+exclude:
+  - Gemfile
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      footer: false
+      show_date: false
+      layout: article
+      sidebar:
+        nav: en
+      aside:
+        toc: false
+
+
+## => Plugins
+##############################
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
