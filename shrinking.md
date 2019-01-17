@@ -1,5 +1,5 @@
 ---
-title: Shrinking
+title: APK shrinking
 ---
 
 Minimizing APK size is an important aspect of developing a good Android
