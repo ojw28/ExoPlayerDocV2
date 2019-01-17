@@ -2,7 +2,7 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url : https://ojw28.github.io
+url : https://ojw28.github.io # TODO: Update to release
 baseurl: /ExoPlayerDocV2 # TODO: Update to release
 title   : ExoPlayer
 description: An application level media player for Android
