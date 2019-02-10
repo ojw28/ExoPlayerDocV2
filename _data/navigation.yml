@@ -9,10 +9,20 @@ header:
 en:
   - title:      Start
     children:
-      - title:  Overview
+      - title:  Home
         url:    index.html
-      - title:  Getting started
+      - title:  Developer guide
         url:    guide.html
+      - title:  Demo application
+        url:    demo-application.html
+      - title:  Supported formats
+        url:    supported-formats.html
+      - title:  Supported devices
+        url:    supported-devices.html
+      - title:  FAQs
+        url:    faqs.html
+      - title:  OEM testing
+        url:    oems.html
   - title:      Advanced topics
     children:
       - title:  Digital rights management
