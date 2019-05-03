@@ -2,15 +2,16 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url : https://ojw28.github.io # TODO: Update to release
-title   : ExoPlayer
+url: https://exoplayer.dev
+baseurl:
+title: ExoPlayer
 description: An application level media player for Android
 
 
 ## => Link roots
 ##############################
-releasev2: https://github.com/google/ExoPlayer/tree/release-v2
-exo_sdk: /ExoPlayerDocV2/doc/reference/com/google/android/exoplayer2 # TODO: Update to release
+release_v2: https://github.com/google/ExoPlayer/tree/release-v2
+exo_sdk: /doc/reference/com/google/android/exoplayer2
 android_sdk: https://developer.android.com/reference
 
 
@@ -71,6 +72,7 @@ permalink   : date
 exclude:
   - Gemfile
   - README.md
+  - vendor
 
 defaults:
   - scope:
@@ -81,8 +83,6 @@ defaults:
       layout: article
       sidebar:
         nav: en
-      aside:
-        toc: false
 
 
 ## => Plugins
@@ -91,4 +91,5 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
   - jemoji

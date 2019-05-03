@@ -57,9 +57,9 @@ contribution to the APK size can be reduced by approximately 40%.
 Enabling `shrinkResources` in your app module's `build.gradle` file can result
 in a further reduction in size.
 
-## Specify which Extractor implementations your app needs ##
+## Specify which extractors your app needs ##
 
-If your app uses `ExtractorMediaSource`, be aware that by default it will use
+If your app uses `ProgressiveMediaSource`, be aware that by default it will use
 `DefaultExtractorsFactory`. `DefaultExtractorsFactory` depends on all of the
 `Extractor` implementations provided in the ExoPlayer library, and as a result
 none of them will be removed by ProGuard. If you know that your app only needs
@@ -77,11 +77,11 @@ private class Mp4ExtractorsFactory implements ExtractorsFactory {
 ~~~
 {: .language-java}
 
-And use it when instantiating `ExtractorMediaSource` instances, like:
+And use it when instantiating `ProgressiveMediaSource` instances, like:
 
 ~~~
-new ExtractorMediaSource.Factory(mediaDataSourceFactory)
-    .setExtractorsFactory(new Mp4ExtractorsFactory())
+new ProgressiveMediaSource.Factory(
+        mediaDataSourceFactory, new Mp4ExtractorsFactory())
     .createMediaSource(uri);
 ~~~
 {: .language-java}
@@ -89,7 +89,7 @@ new ExtractorMediaSource.Factory(mediaDataSourceFactory)
 This will allow other `Extractor` implementations to be removed by ProGuard,
 which can result in a significant reduction in size.
 
-## Specify which Renderer implementations your app needs ##
+## Specify which renderers your app needs ##
 
 If your app uses `SimpleExoPlayer`, be aware that by default the player's
 renderers will be created using `DefaultRenderersFactory`.

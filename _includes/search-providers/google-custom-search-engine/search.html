@@ -7,23 +7,15 @@
       </div>
     </div>
   </div>
-  <div>
-    <style scoped>
-      .gsc-result .gs-title {
-        height: 1.4em;
-        overflow: visible;
-      }">
-    </style>
-    <script>
-      var gcse = document.getElementsByClassName('js-gcse')[0];
-      var gcseSearch = document.createElement('gcse:search');
-      gcseSearch.setAttribute('enableAutoComplete', 'true');
-      gcseSearch.setAttribute('gname', 'search-box');
-      var gcseSearchresults = document.createElement('gcse:searchresults-only');
-      gcseSearchresults.setAttribute('gname', 'results');
-      gcse.appendChild(gcseSearch);
-      gcse.appendChild(gcseSearchresults);
-    </script>
-    <script>{%- include search-providers/google-custom-search-engine/search.js -%}</script>
-  </div>
+  <script>
+    var gcse = document.getElementsByClassName('js-gcse')[0];
+    var gcseSearch = document.createElement('gcse:search');
+    gcseSearch.setAttribute('enableAutoComplete', 'true');
+    gcseSearch.setAttribute('gname', 'search-box');
+    var gcseSearchresults = document.createElement('gcse:searchresults-only');
+    gcseSearchresults.setAttribute('gname', 'results');
+    gcse.appendChild(gcseSearch);
+    gcse.appendChild(gcseSearchresults);
+  </script>
+  <script>{%- include search-providers/google-custom-search-engine/search.js -%}</script>
 {%- endif -%}
